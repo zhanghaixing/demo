@@ -1,0 +1,287 @@
+@charset 'utf-8';
+
+/* CSS Document */
+html, body, p, input, h1, h2, h3, h4, h5, h6, ul, li, dl, dt, dd, form {
+	font-weight: normal;
+	line-height: 1;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	vertical-align: middle;
+	word-break: break-all;
+}
+html, body {
+	font-family: Helvetica;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+}
+header, section, footer, img, button {
+	display: block;
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+input, button, select, textarea {
+	outline: none;
+}
+section {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.main{
+	width: 420px;
+	height: 740px;
+	background:#ffffff;
+	position: relative;
+	left:50%;
+	top:50%;
+	margin:-370px 0 0 -210px;
+}
+.main section{
+	width: 362px;
+	background:#f1f1f1;
+	position:absolute;
+	left:50%;
+	margin:25px 0 0 -181px;
+}
+.main section form{
+	width: 312px;
+	position: relative;
+	left:50%;
+	margin: 26px 0 0 -156px;
+}
+.main section form dl dt{
+	height: 10px;
+	margin-bottom: 9px
+}
+.main section form > div{
+	margin-top: 21px;
+	position:relative;
+}
+.main section form div.name{
+	margin-top: 0px;
+}
+.main section form dl dd{
+	height: 29px;
+}
+.main section form dl span{
+	display: block;
+	height: 10px;
+	line-height: 10px;
+	font-size: 10px;
+    color: #000;
+    font-weight: bold;
+}
+.main section form > div > p{
+	font-size:10px;
+	line-height: 10px;
+	font-size: 10px;
+	margin-top: 7px;
+	
+}
+.main section form dl dd input{
+	display: block;
+	width:290px;
+	height:27px;
+	line-height: 29px;
+	color:#000;
+	font-size:10px;
+	padding:0 10px 0 10px;
+	border-width:1px;
+	border-style:solid;
+	
+}
+.main section form dl dd select{
+	height: 29px;
+	width: 312px;
+	line-height: 29px;
+    display: block;
+    text-align:left;
+    padding-left: 10px;
+    border-radius: 0px;
+   
+    font-weight: bold;
+}
+.main section form .name dl dd.first{
+	width: 151.5px;
+	float: left;
+}
+.main section form .name dl dd  input{
+	width: 127px;
+}
+.main section form .name dl dd.last{
+	margin-left: 163px
+}
+.main section form .birthday dl dd.month{
+	float: left;
+	width: 133px;
+}
+.main section form .birthday dl dd.month select{
+	width: 133px;
+}
+.main section form .birthday  dl dd.day{
+	float: left;
+	width: 60px;
+	margin-left:10px;
+}
+.main section form .birthday dl dd.day input{
+	width:38px;
+}
+.main section form .birthday dl dd.year{
+	width: 99px;
+	margin-left: 213px;
+}
+.main section form .birthday dl dd.year input{
+	width:77px;
+}
+.main section form .iphone dl dd div{
+	width: 310px;
+	height: 27px;
+	background: #fff;
+}
+.main section form .iphone dl dd div span{
+	display: block;
+	width: 36px;
+	height: 27px;
+	background: url(../img/flag.png) 9px 50% no-repeat;
+	float: left;
+}
+.main section form .iphone dl dd div span:after{
+	content:" ";
+	display: block;
+	width: 0px;
+	height: 0px;
+	margin-top:13px;
+	margin-left:30px;
+	border-top: 3px solid #145daf;
+	border-left:3px solid transparent;
+	border-right:3px solid transparent;
+	border-bottom:3px solid transparent;
+}
+.main section form .iphone dl dd div input{
+	border:none;
+	width:254px;
+	margin-left:36px;
+}
+.main section .btn{
+	width: 70px;
+	height: 27px;
+	border: 1px solid #358df7;
+	border-radius: 2px;
+	color:#fff;
+	position: relative;
+	top:28px;
+	left:265px;
+}
+.normal2{
+	background: linear-gradient(to bottom,#358ffa,#3187ec);
+}
+.select_normal{
+	border:1px solid #ccc;
+}
+/*提示框*/
+.prompt {
+    width: 267px;
+    padding: 10px;
+    border-top:1px solid #bbb;
+    border-left:1px solid #bbb;
+    border-right:1px solid #bbb;
+    border-bottom:1px solid #a8a8a8;
+    box-shadow: 0px 1px 5px #a8a8a8;
+    background:#fff;
+    position: absolute;
+    left:-302px;
+    top:-15px;
+}
+.prompt:before,
+.prompt:after {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border: solid transparent;
+    pointer-events: none;
+    content: "";
+    border-color: rgba(136, 183, 213, 0);
+}
+.prompt:before {
+    border-left-color: #a8a8a8;
+    border-width: 9px;
+    top: 15%;
+    left: 100%;
+}
+.prompt:after {
+    border-left-color: #fff;
+    border-width: 7px;
+    top: 17%;
+    left: 100%;
+}
+/*对俩处提示框的样式控制*/
+
+.main .password_1 .prompt>div{
+	width:267px;
+}
+.main .password_1 .prompt>div p{
+	width:100%;
+	height:16px;
+	line-height:16px;
+	font-size:16px;
+	font-weight:bold;
+}
+.main .password_1 .prompt .strength{
+	width:100%;
+	height:5px;
+	background:#f5f5f5;
+	margin:5px 0;
+}
+.main .password_1 .prompt>p{
+	font-size:10px;
+	line-height: 15px;
+}
+
+.main .email .prompt>p{
+	font-size:15px;
+	line-height:20px;
+}
+
+
+.blue{
+	color:#0055cb;
+}
+.red{
+	color:#e7465c;
+}
+.hide{
+	display:none;
+}
+.normal{
+	border-color:#c0c0c0 #d9d9d9 #d9d9d9 #d9d9d9;
+}
+/*input:hover{
+	border-color:#c0c0c0 #c0c0c0 #c0c0c0 #c0c0c0;
+}*/
+.hoved{
+	border-color:rgba(12, 28, 56, 0.4) rgba(12, 28, 56, 0.4) rgba(12, 28, 56, 0.4) rgba(12, 28, 56, 0.4);
+}
+input:focus{
+	border-color:#3690fc;
+}
+select:focus{
+	border-color:#3690fc;
+}
+.empty{
+	border-color:#e7465c;
+}
+button:hover{
+	background: linear-gradient(to bottom,#1f5ca5,#4c94e9);
+}
+select{
+	background: #f1f1f1;
+}
